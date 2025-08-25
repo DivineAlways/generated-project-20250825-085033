@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main View Wireframe</title>
+    <style>
+        body { font-family: Arial, sans-serif; color: #333; margin: 0; background-color: #fff; }
+        .container { display: flex; height: 100vh; }
+        .sidebar { width: 250px; background-color: #e9ecef; border-right: 2px solid #ced4da; padding: 20px; }
+        .main-content { flex-grow: 1; display: flex; }
+        .content-area { flex: 3; padding: 20px; }
+        .notes-area { flex: 1; background-color: #f8f9fa; border-left: 2px dashed #adb5bd; padding: 20px; }
+        .placeholder { background-color: #ced4da; border: 1px solid #adb5bd; text-align: center; padding: 10px; margin-bottom: 10px; }
+        .placeholder-text { background-color: #f1f3f5; border: 1px solid #dee2e6; padding: 20px; }
+        h1, h2, h3 { margin: 0 0 15px 0; color: #495057; }
+        p { line-height: 1.5; font-size: 14px; color: #6c757d; }
+        ul { list-style: none; padding: 0; }
+        li { padding: 10px; border: 1px solid #ced4da; margin-bottom: 5px; background-color: #f8f9fa; cursor: pointer; }
+        li.active { background-color: #007bff; color: white; border-color: #007bff; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>[PROJECT TITLE]</h2>
+            <hr>
+            <ul>
+                <li class="active">[Section 1 Title]</li>
+                <li>[Section 2 Title]</li>
+                <li>[Section 3 Title]</li>
+                <li>[Section 4 Title]</li>
+                <li>...</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="content-area">
+                <h2>[Section 1 Title]</h2>
+                <div class="placeholder-text">
+                    <p>[Summary text for the section goes here. Lorem ipsum dolor sit amet.]</p>
+                </div>
+                <h3>[Subsection 1.1 Title]</h3>
+                <div class="placeholder-text">
+                    <p>[Content for the subsection. Consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.]</p>
+                </div>
+                <h3>[Subsection 1.2 Title]</h3>
+                <div class="placeholder-text">
+                     <p>[More content here. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.]</p>
+                </div>
+            </div>
+            <div class="notes-area">
+                <h3>Wireframe Notes</h3>
+                <p><strong>1. Layout:</strong> Two-column layout with fixed sidebar for navigation and a main content area.</p>
+                <p><strong>2. Sidebar:</strong> Lists all major sections of the report. The 'active' item is visually distinct.</p>
+                <p><strong>3. Content Area:</strong> Displays the content for the selected section. Includes a main title, a summary, and subsequent subsections with their own titles and content blocks.</p>
+                <p><strong>4. Interactivity:</strong> Clicking a sidebar item should update the content displayed in the Content Area.</p>
+                <p><strong>5. Style:</strong> This is a low-fidelity, grayscale representation focusing on structure, not on final colors or typography.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
